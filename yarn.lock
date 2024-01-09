@@ -19,6 +19,33 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@cloudinary-util/url-loader@^3.22.0":
+  version "3.23.0"
+  resolved "https://registry.npmjs.org/@cloudinary-util/url-loader/-/url-loader-3.23.0.tgz#694aee3b858f3a01d42953f55c17b4620973c4e9"
+  integrity sha512-Tp6TrAkOYkgT3CyIU4nXS4utLkYN9nquTQSNW6Qqmb7vA7Y1MaSRty+F2FHV84WETK9XQDCfdCn4B+SyH4sWWw==
+  dependencies:
+    "@cloudinary-util/util" "2.3.0"
+    "@cloudinary/url-gen" "^1.10.2"
+
+"@cloudinary-util/util@2.3.0", "@cloudinary-util/util@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/@cloudinary-util/util/-/util-2.3.0.tgz#8a2a7ad3d3f089c2fff08f53eaddd50e946048f1"
+  integrity sha512-0Gojd+ZRQjJQmlBEAa8Ua94amvx7uWHoUzVUEGi1S8bgF1wPcMqG07cSUGQfRwHsFQ/9XOesx76Df622E+CevA==
+
+"@cloudinary/transformation-builder-sdk@^1.9.0":
+  version "1.10.0"
+  resolved "https://registry.npmjs.org/@cloudinary/transformation-builder-sdk/-/transformation-builder-sdk-1.10.0.tgz#30be98667293d63727f97abeb0f3442f742cdd10"
+  integrity sha512-T8evZcLOgvcrBS6bVLseZPGL/BXLReRn+DbbBnKj7yTuJ9ppZ+8EFXpZn7c0Bb2hZz6C/0mC4B5fxKfgTPzDsw==
+  dependencies:
+    "@cloudinary/url-gen" "^1.7.0"
+
+"@cloudinary/url-gen@^1.10.2", "@cloudinary/url-gen@^1.7.0":
+  version "1.14.0"
+  resolved "https://registry.npmjs.org/@cloudinary/url-gen/-/url-gen-1.14.0.tgz#87a31719858acd98b482ca331a0df2d5a8791f34"
+  integrity sha512-XbG8QgD5fkTUO/YYUWftfz3sUpKzRZJkXhp6xLSxmK/36iyMy2wA4SF5FLCOnv6fLLUneQzXbc4OAwaDM0EWCQ==
+  dependencies:
+    "@cloudinary/transformation-builder-sdk" "^1.9.0"
+
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
   resolved "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.4.0.tgz#a23514e8fb9af1269d5f7788aa556798d61c6b59"
@@ -558,6 +585,21 @@ client-only@0.0.1:
   resolved "https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
 
+cloudinary-core@^2.13.0:
+  version "2.13.0"
+  resolved "https://registry.npmjs.org/cloudinary-core/-/cloudinary-core-2.13.0.tgz#b59f90871b6c708c3d0735b9be47ac08181c57fb"
+  integrity sha512-Nt0Q5I2FtenmJghtC4YZ3MZZbGg1wLm84SsxcuVwZ83OyJqG9CNIGp86CiI6iDv3QobaqBUpOT7vg+HqY5HxEA==
+
+cloudinary@^1.41.2:
+  version "1.41.2"
+  resolved "https://registry.npmjs.org/cloudinary/-/cloudinary-1.41.2.tgz#29b567f6f320dd39a981e69d3787b559047aa34f"
+  integrity sha512-9gH6ofz+N8AzfjqtmTgB9lVxwWcroHFfMOOM6iiX/g1H+KYz+sArClXWtd0prRE6m/IoBBBbbaJ12yRdJNnMxA==
+  dependencies:
+    cloudinary-core "^2.13.0"
+    core-js "^3.30.1"
+    lodash "^4.17.21"
+    q "^1.5.1"
+
 color-convert@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz#72d3a68d598c9bdb3af2ad1e84f21d896abd4de3"
@@ -579,6 +621,11 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
+
+core-js@^3.30.1:
+  version "3.35.0"
+  resolved "https://registry.npmjs.org/core-js/-/core-js-3.35.0.tgz#58e651688484f83c34196ca13f099574ee53d6b4"
+  integrity sha512-ntakECeqg81KqMueeGJ79Q5ZgQNR+6eaE8sxGCx62zMbAIj65q+uYvatToew3m6eAGdU4gNZwpZ34NMe4GYswg==
 
 cross-spawn@^7.0.0, cross-spawn@^7.0.2:
   version "7.0.3"
@@ -1637,6 +1684,11 @@ lodash.merge@^4.6.2:
   resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -1721,6 +1773,14 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
+
+next-cloudinary@^5.18.0:
+  version "5.18.0"
+  resolved "https://registry.npmjs.org/next-cloudinary/-/next-cloudinary-5.18.0.tgz#ddca41a836dc41b6e780a7ae4fb7f7f70a710187"
+  integrity sha512-QzqjyNs+ji+XCbkDQ+vfOoG37mgNI0gXnI8dPgKPnORIVOfZIjfIRh2hFDL3paEX2ph0CHj4mc4Pu2pSIDTkcw==
+  dependencies:
+    "@cloudinary-util/url-loader" "^3.22.0"
+    "@cloudinary-util/util" "^2.3.0"
 
 next@14.0.4:
   version "14.0.4"
@@ -2010,6 +2070,11 @@ punycode@^2.1.0:
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
   integrity sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==
 
+q@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npmjs.org/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
+  integrity sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==
+
 queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
@@ -2221,6 +2286,7 @@ streamsearch@^1.1.0:
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -2281,6 +2347,7 @@ string.prototype.trimstart@^1.0.7:
     es-abstract "^1.22.1"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
